@@ -9,11 +9,11 @@ public class SlackMessage {
   @Key
   public String type;
 
-  @Key
-  public String ts;
+  @Key("ts")
+  public String timestamp;
 
-  @Key
-  public String user;
+  @Key("user")
+  public String userId;
 
   @Key
   public String text;
