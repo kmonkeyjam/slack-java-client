@@ -1,0 +1,5 @@
+.idea
+target
+*.sw*
+slack_client_secrets.json
+*.iml
