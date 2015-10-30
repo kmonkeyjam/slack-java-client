@@ -6,6 +6,7 @@
   <groupId>name.monkey</groupId>
   <artifactId>slack-java-client</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <description>Java slack client for accessing the Web API</description>
 
   <properties>
     <!-- use UTF-8 for everything -->

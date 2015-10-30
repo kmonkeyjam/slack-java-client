@@ -20,7 +20,7 @@ import java.util.Arrays;
 
 public class Auth {
   private static final java.io.File DATA_STORE_DIR = new java.io.File(
-          System.getProperty("user.home"), ".credentials/hub-slack");
+          System.getProperty("user.home"), ".credentials/slack-java-client");
   private static final String SCOPE = "read";
   private static FileDataStoreFactory DATA_STORE_FACTORY;
   private static HttpTransport HTTP_TRANSPORT;
