@@ -11,6 +11,7 @@ import com.google.api.client.json.JsonFactory;
 import com.google.api.client.json.JsonObjectParser;
 import com.google.api.client.json.jackson2.JacksonFactory;
 import name.monkey.slackjavaclient.model.ChannelHistoryResponse;
+import name.monkey.slackjavaclient.model.ChannelsListResponse;
 import name.monkey.slackjavaclient.model.UsersInfoResponse;
 
 import java.io.IOException;
@@ -78,6 +79,13 @@ public class SlackClient {
 
     HttpResponse response = run(builder.toString());
     return response.parseAs(UsersInfoResponse.class);
+  }
+
+  public ChannelsListResponse getChannelsList(Param... optional) throws IOException {
+    String apiUrl = "https://slack.com/api/channels.list";
+    StringBuilder builder = getBaseUrlBuilder(apiUrl, optional);
+    HttpResponse response = run(builder.toString());
+    return response.parseAs(ChannelsListResponse.class);
   }
 
   private StringBuilder getBaseUrlBuilder(String apiUrl, Param[] optional) {
