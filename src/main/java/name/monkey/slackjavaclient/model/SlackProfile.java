@@ -11,4 +11,7 @@ public class SlackProfile {
 
   @Key("last_name")
   public String lastName;
+
+  @Key
+  public String email;
 }
